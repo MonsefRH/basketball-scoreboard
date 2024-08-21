@@ -47,7 +47,7 @@ function resetScores() {
 
 
 let timerElement = document.getElementById('timer');
-let totalTime = 10 ; // 12 minutes in seconds
+let totalTime = 12 * 60 ; 
 let currentTime = totalTime;
 let timerInterval = null;
 
