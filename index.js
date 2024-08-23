@@ -47,7 +47,7 @@ function resetScores() {
 
 
 let timerElement = document.getElementById('timer');
-let totalTime = 12 * 60 ; 
+let totalTime = 10 ; // 10s to try in hope to add the choice to the client to custome it 
 let currentTime = totalTime;
 let timerInterval = null;
 
@@ -75,7 +75,6 @@ function stopTimer() {
     timerInterval = null;
     if(currentTime ==0 ){
         declareWinner();
-
     }
 }
 
@@ -111,5 +110,3 @@ function closeModal() {
 
 // Initialize the display
 updateTimerDisplay();
-
-

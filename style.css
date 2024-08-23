@@ -1,8 +1,4 @@
 @import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
-body{
-    background:url("https://t3.ftcdn.net/jpg/05/70/06/64/360_F_570066449_SS8sx5K4ZsYXCcXvR014q2prysMs1kf2.jpg") no-repeat fixed center ;
-    background-size: 1600px;
-}
 body {
     background: url("https://t3.ftcdn.net/jpg/05/70/06/64/360_F_570066449_SS8sx5K4ZsYXCcXvR014q2prysMs1kf2.jpg") no-repeat fixed center;
     background-size: 1600px;
@@ -143,4 +139,103 @@ button:hover{
 button:active{
     background-color: #02152f83;
     transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust the container size and padding */
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 0%;
+    }
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .timer {
+        right: 40px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap; /* Allows the elements to wrap to the next line */
+        justify-content: space-around; /* Distributes space between elements */
+        gap: 20px;
+        position: absolute;
+    }
+    .timer p {
+        font-size: 80%;
+        line-height: 2.3;
+    }
+
+    .commande_buttons{
+        position: relative;
+        bottom: 45px;
+        left: 17px;
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .timer button {
+        font-size: 14px;
+        height: 50% ;
+        margin:5% 4%;
+    }
+
+    .home-score, .guest-score {
+        margin-top: 100px;
+        width: 20% ;
+    }
+
+    .score-plc {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    /* Adjust font sizes for readability */
+    #home-actually-score, #guest-actually-score {
+        font-size: 60px;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .btns {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    .reset {
+        bottom: 0px;
+        left: 15px;
+        right: 16px;
+        margin-top: 50px;
+    }
+
+    .reset button {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .modal-content {
+        margin-top: 200px;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .close {
+        font-size: 24px;
+    }
 }
